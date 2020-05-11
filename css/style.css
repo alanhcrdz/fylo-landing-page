@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    margin: 0 auto;
+    /* max-width: 1440px; */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+ ul li{
+    display: inline-block;
+    padding-left: 50px;
+    font-weight: 400;
+    
+}
+
+
+
+.section-1, .flex{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2{
+    margin-top: 15%;
+}
+
+.section-2 img{
+    top: 10px;
+    position: relative;
+}
+.flex{
+    margin: 0;
+    background: #F8F8FE;
+
+}
+.info h2{
+    width: 100%;
+    line-height: 40px;
+    max-width: 700px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Raleway',sans-serif;
+}
+
+.info p{
+    font-family: 'Raleway',sans-serif;
+    max-width: 600px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.info{
+    padding: 50px;
+}
+
+.info-2 h2{
+    width: 100%;
+    line-height: 40px;
+    max-width: 700px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Raleway',sans-serif;
+}
+
+.info-2 p{
+    font-family: 'Raleway',sans-serif;
+    max-width: 600px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.info-2{
+    padding: 50px;
+}
+
+
+
+.mockup{
+    
+    max-width: 900px;
+}
+
+.mockup img{
+    width: 100%;
+    float: right;
+
+}
+
+form{
+    max-width: 500px;
+    display: flex;
+    margin-top: 30px;
+}
+form input[type=email]{
+    border-radius: 3px;
+    outline: none;
+    padding:15px;
+    width: 60%;
+    border: 1px solid #ccc;
+}
+input[type=email]:focus{
+    border: 1px solid black;
+}
+form input[type=submit]{
+    border-radius: 3px;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    padding:15px;
+    width: 40%;
+    margin-left: 20px;
+    outline: none;
+    cursor: pointer;
+    background-color: hsl(224, 93%, 58%);
+    border: 1px solid hsl(224, 93%, 58%);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#link{
+    position: relative;
+    top: 5px;
+    width: 100%;
+    max-width: 200px;
+    line-height: 30px;
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.link {
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+.link span{
+    
+    font-family: 'Raleway',sans-serif;
+}
+.arrow{
+    height: 18px;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: -4px 4px 10px hsl(0, 0%, 75%);
+    padding: 20px;
+    max-width: 400px;
+    margin-top: 50px;
+    height: 280px;
+}
+
+.testimonial{
+    line-height: 25px;
+    width: 90%;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: 'Raleway',sans-serif;
+}
+.author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.author img{
+    
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+   
+}
+
+
+.card p{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.card span{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: hsl(238, 22%, 44%);
+   
+}
+.form form{
+    display: block;
+    width: 500px;
+    margin-right: 50px;
+
+    
+}
+.form input[type=email]{
+    width: 90%;
+
+}
+.form input[type=submit]{
+    margin: 30px 0;
+
+}
+
+
+
+
+.text{
+    flex: 1;
+
+    color: white;
+    max-width: 800px;
+
+}
+
+.text h2{
+    font-size: 2.5rem;
+    font-family: 'Raleway',sans-serif;
+}
+
+.text p{
+    margin-top: 30px;
+    font-family: 'Raleway',sans-serif;
+    max-width: 450px;
+}
+
+
+
+footer{
+    background-color:hsl(243, 87%, 12%) ;
+    padding: 50px;
+
+}
+footer img{
+    margin-top: 10px;
+}
+.column{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+    line-height: 30px;
+
+}
+.column span{
+    color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.circle{
+    margin-left: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+i{
+    color: white;
+}
+
+
+/* media querys */
+
+
+
+
+@media screen and (max-width: 1024px){
+
+    header{
+        padding: 30px;
+        align-items: center;
+    }
+
+    ul li{
+        display: inline-block;
+        padding-left: 30px;
+        font-weight: 400;
+        
+    }
+    
+    header img{
+        width: 25%;
+        max-width: 200px;
+    }
+
+    .section-1, .flex {
+        flex-direction: column-reverse;
+    }
+    
+
+   
+    .mockup{
+        margin: 0 auto;
+        width: 70%;
+    }
+    
+    .info h2{
+        margin: 30px auto;
+        line-height: 50px;
+        width: 500px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .info p{
+    
+        color: hsl(243, 87%, 12%);
+        font-size: 18px;
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+    }
+
+         form{
+        width: 100%;
+        margin: 20px auto;
+        display: flex;
+        
+    }
+
+    
+    .form form{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+        
+    }
+
+    .form input[type=email]{
+        width: 90%;
+
+    
+    }
+    .form input[type=submit]{
+        width: 80%;
+        
+
+    }
+
+  
+
+
+    .info-2 h2{
+        text-align: center;
+        font-size: 2rem;
+        margin: 30px auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .info-2 p{
+        font-size: 17px;
+        max-width: 500px;
+        text-align: center;
+        margin: 30px auto;
+
+
+    }
+    .link {
+        max-width: 200px;
+        margin:30px  auto;
+    }
+
+    .card{
+        margin: 30px auto;
+    }
+    .cta{
+       display: block;
+    }
+
+    .text h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .text p{
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+        line-height: 20px;
+    }
+
+
+ 
+    .form input[type=email]{
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+    
+    }
+    .form input[type=submit]{
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .column{
+        height: 10%;
+        width: 100%;
+    }
+
+    .mobile-center{
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    
+
+    @media screen and (max-width: 600px){
+
+      
+        header{
+            padding: 30px;
+            align-items: center;
+        }
+
+        ul li{
+            display: inline-block;
+            padding-left: 30px;
+            font-weight: 400;
+            
+        }
+        
+        header img{
+            width: 25%;
+            max-width: 200px;
+        }
+    
+        .section-1, .flex {
+            flex-direction: column-reverse;
+        }
+        
+    
+       
+        .mockup{
+            margin: 0 auto;
+            width: 70%;
+        }
+        
+        .info h2{
+            line-height: 50px;
+            width: 400px;
+            text-align: center;
+            font-size: 2rem;
+        }
+    
+        .info p{
+        
+            color: hsl(243, 87%, 12%);
+            font-size: 15px;
+            text-align: center;
+            width: 80%;
+            margin: 30px auto;
+        }
+        form{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        form input[type=email]{
+            width: 100%;
+            
+        }
+        form input[type=submit]{
+            width: 100%;
+            margin: 20px 0;
+            
+        }
+
+        .info-2 h2{
+            text-align: center;
+            font-size: 1.2rem;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .info-2 p{
+            font-size: 17px;
+            max-width: 500px;
+            text-align: left;
+
+        }
+        .link {
+            max-width: 200px;
+            margin:30px  auto;
+        }
+
+
+        .cta{
+           display: block;
+        }
+
+        .text h2{
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .text p{
+            text-align: center;
+            width: 80%;
+            margin: 30px auto;
+            line-height: 20px;
+        }
+        
+        .form input[type=email]{
+            width: 90%;
+            display: block;
+            margin: 20px auto;
+        
+        }
+        .form input[type=submit]{
+            margin: 30px 0;
+            width: 90%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .column{
+            height: 10%;
+            width: 100%;
+        }
+
+        .mobile-center{
+            margin: 30px auto;
+            text-align: center;
+        }
+      
+    
+    }
+}
+
+
