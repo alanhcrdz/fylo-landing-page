@@ -8,7 +8,7 @@
 body{
     height: 100%;
     margin: 0 auto;
-    /* max-width: 1440px; */
+    max-width: 1440px; 
 }
 header{
     display: flex;
@@ -101,6 +101,7 @@ form{
     max-width: 500px;
     display: flex;
     margin-top: 30px;
+
 }
 form input[type=email]{
     border-radius: 3px;
@@ -286,12 +287,23 @@ i{
 }
 
 
+#error{
+    width: 200px;
+    color: red;
+    display: inline-block;
+    position: relative;
+    bottom: 360px;
+    left: 50px;
+    font-style: italic;
+    font-family: 'Raleway',sans-serif;
+}
+
+
+
+
 /* media querys */
 
-
-
-
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 991px){
 
     header{
         padding: 30px;
@@ -306,7 +318,7 @@ i{
     }
     
     header img{
-        width: 25%;
+        width: 15%;
         max-width: 200px;
     }
 
@@ -318,7 +330,7 @@ i{
    
     .mockup{
         margin: 0 auto;
-        width: 70%;
+        width: 50%;
     }
     
     .info h2{
@@ -432,126 +444,297 @@ i{
 
     
 
-    @media screen and (max-width: 600px){
+}
+@media screen and (max-width: 767px){
 
       
-        header{
-            padding: 30px;
-            align-items: center;
-        }
+    header{
+        padding: 30px;
+        align-items: center;
+    }
 
-        ul li{
-            display: inline-block;
-            padding-left: 30px;
-            font-weight: 400;
-            
-        }
+    ul li{
+        display: inline-block;
+        padding-left: 30px;
+        font-weight: 400;
         
-        header img{
-            width: 25%;
-            max-width: 200px;
-        }
+    }
     
-        .section-1, .flex {
-            flex-direction: column-reverse;
-        }
-        
+    header img{
+        width: 25%;
+        max-width: 200px;
+    }
+
+    .section-1, .flex {
+        flex-direction: column-reverse;
+    }
     
-       
-        .mockup{
-            margin: 0 auto;
-            width: 70%;
-        }
-        
-        .info h2{
-            line-height: 50px;
-            width: 400px;
-            text-align: center;
-            font-size: 2rem;
-        }
+
+   
+    .mockup{
+        margin: 0 auto;
+        width: 70%;
+    }
     
-        .info p{
+    .info h2{
+        line-height: 50px;
+        width: 400px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .info p{
+    
+        color: hsl(243, 87%, 12%);
+        font-size: 15px;
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+    }
+    form{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    form input[type=email]{
+        width: 100%;
         
-            color: hsl(243, 87%, 12%);
-            font-size: 15px;
-            text-align: center;
-            width: 80%;
-            margin: 30px auto;
-        }
-        form{
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-        }
-        form input[type=email]{
-            width: 100%;
-            
-        }
-        form input[type=submit]{
-            width: 100%;
-            margin: 20px 0;
-            
-        }
-
-        .info-2 h2{
-            text-align: center;
-            font-size: 1.2rem;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .info-2 p{
-            font-size: 17px;
-            max-width: 500px;
-            text-align: left;
-
-        }
-        .link {
-            max-width: 200px;
-            margin:30px  auto;
-        }
-
-
-        .cta{
-           display: block;
-        }
-
-        .text h2{
-            font-size: 1.2rem;
-            text-align: center;
-        }
-        .text p{
-            text-align: center;
-            width: 80%;
-            margin: 30px auto;
-            line-height: 20px;
-        }
+    }
+    form input[type=submit]{
+        width: 100%;
+        margin: 20px 0;
         
-        .form input[type=email]{
-            width: 90%;
-            display: block;
-            margin: 20px auto;
-        
-        }
-        .form input[type=submit]{
-            margin: 30px 0;
-            width: 90%;
-            margin: 20px auto;
-            display: block;
-        }
+    }
 
-        .column{
-            height: 10%;
-            width: 100%;
-        }
+    .info-2 h2{
+        text-align: center;
+        font-size: 1.2rem;
+        width: 100%;
+        max-width: 400px;
+    }
 
-        .mobile-center{
-            margin: 30px auto;
-            text-align: center;
-        }
-      
+    .info-2 p{
+        font-size: 17px;
+        max-width: 500px;
+        text-align: left;
+
+    }
+    .link {
+        max-width: 200px;
+        margin:30px  auto;
+    }
+
+
+    .cta{
+       display: block;
+    }
+
+    .text h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .text p{
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+        line-height: 20px;
+    }
+    
+    .form input[type=email]{
+        width: 90%;
+        display: block;
+        margin: 20px auto;
     
     }
+    .form input[type=submit]{
+        margin: 30px 0;
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .column{
+        height: 10%;
+        width: 100%;
+    }
+
+    .mobile-center{
+        margin: 30px auto;
+        text-align: center;
+    }
+  
+
 }
+
+@media screen and (max-width: 375px){
+
+    body{
+        width: 100%;
+
+
+    }
+      
+    header{
+        width: 100%;
+        margin: auto;
+        padding: 30px;
+        align-items: center;
+        
+
+        
+    }
+
+    ul li{
+        font-size: 13px;
+        display: inline-block;
+        padding-left: 30px;
+        font-weight: 400;
+
+
+        
+    }
+    
+    header img{
+        width: 25%;
+        max-width: 200px;
+
+
+    }
+
+    .section-1, .flex {
+        flex-direction: column-reverse;
+        width: 100%;
+
+
+
+    }
+    
+
+   
+    .mockup{
+        margin: 0 auto;
+        width: 70%;
+    }
+    
+    .info h2{
+        line-height: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .info p{
+    
+        color: hsl(243, 87%, 12%);
+        font-size: 13px;
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+    }
+    form{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+
+    }
+    form input[type=email]{
+        width: 100%;
+
+        
+    }
+    form input[type=submit]{
+        width: 100%;
+        margin: 20px 0;
+
+        
+    }
+
+    .info-2 h2{
+        text-align: center;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .info-2 p{
+        font-size: 13px;
+        max-width: 500px;
+        text-align: left;
+
+    }
+    .link {
+        max-width: 200px;
+        margin:30px  auto;
+        font-size: 13px;
+    }
+
+
+    .cta{
+       display: block;
+
+    }
+
+    .card{
+        width: 100%;
+
+    }
+
+    .testimonial{
+        font-size: 13px;
+    }
+
+    .author span{
+        font-size: 1rem;
+
+    }
+
+    .author p{
+        font-size: 13px;
+        margin-top: 30px;
+    }
+    .author img{
+        bottom: 30px;
+
+    }
+
+    .text h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .text p{
+        font-size: 13px;
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+        line-height: 20px;
+
+    }
+    
+    .form input[type=email]{
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+    
+    }
+    .form input[type=submit]{
+        margin: 30px 0;
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .column{
+        height: 10%;
+        width: 100%;
+    }
+
+    .mobile-center{
+        margin: 30px auto;
+        text-align: center;
+    }
+  
+
+}
+
 
 

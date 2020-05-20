@@ -31,9 +31,9 @@
       Access them wherever you need, share and collaborate with friends, 
       family, and co-workers.</p>
       
-        <form>
-        <input autocomplete="off" type="email" id="email" placeholder="Enter yor email...">
-        <input type="submit" id="submit" value="Get Started">
+        <form id="form" name="form" aria-label="hidden">
+        <input aria-label="hidden" autocomplete="off" name="email"  type="email" id="email" placeholder="Enter yor email..."><br>
+        <input aria-label="hidden" type="submit" id="submit" value="Get Started">
       </form>
         
       </div><!-- info -->
@@ -41,7 +41,10 @@
       <div class="mockup">
         <img src="images/illustration-1.svg" alt="mockup">
       </div><!-- mockup -->
+
   </section>
+  <span id="error"></span>
+
 
 
   <section class="section-2">
@@ -91,9 +94,10 @@
     </div><!-- text -->
 
       <div class="form">
-      <form >
-        <input type="email" name="email" placeholder="email@example.com">
-        <input type="submit" value="Get Started For Free" id="submit-2">
+      <form id="form" name="form" aria-label="hidden" >
+        <input aria-label="hidden" type="email" name="email" id="email" placeholder="email@example.com">
+        <input aria-label="hidden" type="submit" value="Get Started For Free" id="submit">
+
       </form>
     </div><!-- form -->
     </div><!-- cta -->
@@ -145,6 +149,6 @@
 
   
 
- 
+    <script src="js/script.js"></script>
 </body>
 </html>
